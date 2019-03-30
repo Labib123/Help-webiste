@@ -1,0 +1,212 @@
+/* Start Global Rules */
+body {
+  height: 4000px;
+  font-family: 'Open Sans', sans-serif; /*Google Font */
+
+}
+
+.head-border:after{
+  content: "" ;
+  display: block ;
+  width:65px ;
+  height: 2px  ;
+  color: #FFF ;
+  background-color: #ff8b38 ;
+  margin: 10px 0 ;
+}
+/* Start Navbar */
+.scrolled {
+  background-color:rgba(0, 0, 0, 0.8);
+}
+.navbar .navbar-brand:hover{color:#ff8b38}
+/*Start header */
+.header {
+        background: url(../images/Header.jpg) no-repeat top center  ;
+        -webkit-background-size:cover ;
+        -moz-background-size:cover;
+        -o-background-size:cover ;
+        background-size:cover ;
+        height: 100vh;
+        position: relative;}
+.header .overlay {
+  position: absolute;
+  top:0 ;
+  left: 0  ;
+  width: 100% ;
+  height: 100% ;
+  background-color: rgba(0,0,0,0.5) ;
+color : #FFF ;  }
+.header .centering-vh
+{
+  margin-top:25vh;
+}
+.header h1 {
+  font-weight:bold ;
+  text-transform: uppercase;
+  font-size: 70px ;
+}
+.header h1 span {
+  font-weight: normal ;
+  color: #ff8b38 ;
+}
+.header h1 ~ .lead {
+  font-size:30px ;
+}
+.header h1 ~ .lead:after{
+    content: "" ;
+    display: block ;
+    width: 70px  ;
+    height: 2px ;
+    background-color: white ;
+    margin: 25px 0px ;
+}
+.header h1 ~ .lead:before {
+  font-size:30px ;
+}
+.header button
+{
+  background: transparent ;
+  padding: 5px 15px ;
+  border: 2px solid #fff ;
+  margin-top:20px ;
+}
+.header form {
+  width:360px ;
+  background-color: #fff ;
+  border-radius: 5px ;
+  overflow: hidden;
+}
+.header form .h1 {
+  background-color: #f5f5f5 ;
+  color:#333 ;
+  font-size: 18px ;
+  padding: 10px ;
+  font-weight:bold;
+  margin-top:0px;
+  margin-bottom: 30px;
+
+}
+.header form .h1 span {
+  color: #ff8b38 ;
+  text-transform: uppercase;
+}
+.header form .form-control
+{
+  border-radius:0px ;
+  border:none;
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+  width: 80% ;
+  margin: 0 auto 30px ;
+}
+.header form input[type="submit"] {
+  background-color: #ff8b38 ;
+  padding:15px;
+}
+.social-media a
+{
+  text-decoration: none;
+}
+.social-media i
+{
+  color: #ccc ;
+  margin: 20px 15px  ;
+  -webkit-transition : all .3s ease-in-out ;
+  -moz-transition : all .3s ease-in-out ;
+  -o-transition : all .3s ease-in-out ;
+  transition : all .3s ease-in-out ;
+  cursor: pointer ;
+}
+.social-media .fa-facebook-f:hover { color: #3C5A99;  }
+.social-media .fa-twitter:hover{color:#38A1F3;}
+.social-media .fa-instagram:hover{color:#e1306c;}
+.social-media .fa-linkedin-in:hover{color:#0077B5;}
+.social-media .fa-google-plus-g:hover{color:#DB4437;}
+.social-media .fa-rss:hover{color:#f26522;}
+
+
+
+.social-media
+{
+  padding: 10px;
+  margin: 10px 15px;
+  background-color: #FFF ;
+  box-shadow: -6px -3px 16px #CCC ;
+}
+.social-media h4
+{
+  font-weight: bold ;
+}
+.social-media p { color:#ccc; margin-bottom:3px ; line-height: 1.4}
+/*Start my framework */
+a {
+  text-decoration: none;
+}
+/*display none for all pictures so that i hamndled with it by jquery*/
+.tab-two , .tab-three {display: none}
+.img-responsive
+{
+  margin-top:50px;
+}
+
+/*Start tabs section*/
+.tabs-section {
+  padding: 50px 0 ;
+  background-color: #f5f5f5;
+  margin-top: 50px;
+}
+
+.tabs-section .tab-switch li {
+  list-style: none;
+  background-color: #333;
+  color:white;
+  border-bottom: 1px solid #FFF ;
+  height: 110px;
+  line-height: 110px;
+  font-size:20px;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+.tabs-section .tab-switch li.selected ,
+.tabs-section .tab-switch li:hover
+{
+  background-color: #ff8b38 ;
+}
+.tabs-section .tabs-content div:not(.tab-one){
+  display: none ;
+}
+.tabs-section .tabs-content h3 {
+  font-weight: bold ;
+  margin-top:0px;
+  letter-spacing:-2px;
+  margin-bottom:20px;
+}
+.tabs-section .tabs-content .lead {
+  line-height: 1.6 ;
+  font-size: 18px;
+  color:#7e7e7e;
+}
+.tabs-section .tabs-content .btn-lg
+{
+  background-color: #ff8b38 ;
+  color: #FFF ;
+}
+.col-md-3 img , .vision img{
+    border-radius:3px;
+    width: 100%;
+    border: 1px solid #8a4419;
+    border-style: inset;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*End tabs section*/
+/*Start sublist section*/
+.sublist{
+  padding: 80px 0px ;
+}
+.sublist h3 {
+    font-weight: bold;
+}
+.vision {margin-top:100px ; background-color: #f5f5f5; height: 8%}
+.achievers img {border-radius: 50%}
+.achievers p , .achievers h3{ text-align: center;}
