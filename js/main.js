@@ -28,8 +28,6 @@ $(function(){
   });
 
 });
-// A simple function to print a message to the user after submittin their form
-function result(){
-  document.write("<h1> Thanks for subscribing in our weekly tech news") ;
-  document.write('<a class="dropdown-item" href="index.html" " > <h3 class="h3"> Go back home </h3> </a>')
-}
+$.validate({
+    lang: 'es'
+  });
