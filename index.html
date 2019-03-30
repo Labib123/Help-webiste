@@ -35,7 +35,7 @@
         <li><a href="#tabs">Courses</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#Achievers">Achievers</a></li>
-        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="gallery.html" target="_blank">Gallery</a></li>
         <li><a href="#International">International Students</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -57,12 +57,12 @@
             <button type="button" name="button">Download Apk</button>
           </div>
           <div class="col-md-6"> <!-- Using grid system bootstrap which float it to the right when it's on medium size and put under when it's on small size (Mobile phone)-->
-          <form class="center-blcok" onsubmit="return result();" method="post">
+          <form class="center-blcok" onsubmit="alert('Thanks for subscribing on our weekly TechNews')" method="post">
             <h2 class="h1 text-center">Try your <span> free  </span>tech news </h2>
-            <input class="form-control" type="text" name="username" value="" placeholder="Name"/>
-            <input class="form-control" type="email" name="email" value="" placeholder="Email"/>
-            <input class="form-control" type="tel" name="pass" value="" placeholder="Phone number"/>
-            <input class="btn btn-block" type="submit" name="submit" value="Get Started" onclick="alert('Thanks for subscribing in our weekly tech news')"/>
+            <input required class="form-control" type="text" name="username" value="" placeholder="Name" maxlength="16" autocomplete="off"/>
+            <input required class="form-control" type="email" name="email" value="" placeholder="Email" autocomplete="off"/>
+            <input required class="form-control" type="tel" name="pass" value="" placeholder="Phone number" autocomplete="off"/>
+            <input class="btn btn-block" type="submit" name="submit" value="Get Started" />
           </form>
         </div>
 
@@ -214,6 +214,7 @@ Offer students a learning experience that enhances their career development, lif
     <script src='js/jquery-1.12.4.min.js'> </script>
     <script src='js/bootstrap.min.js'> </script>
     <script src='js/main.js'> </script>
+    
 
 
   </body>
