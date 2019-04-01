@@ -205,7 +205,7 @@ Offer students a learning experience that enhances their career development, lif
 <!-- Start fees -->
 <div id="fees" class="fees text-center">
   <div class="container">
-    <h2 class="fees-head h1 head-border uppercase ">we have three diffrerent scholarship</h2>
+    <h2 class="fees-head h1 head-border-center uppercase ">we have three diffrerent scholarship</h2>
     <p class="fees-desc">we have three diffrerent scholarship</p>
     <div class="row">
       <div class="col-md-4">
@@ -274,20 +274,20 @@ Offer students a learning experience that enhances their career development, lif
   <!-- START GRID -->
 
 <div class="row">
-  <form class="contact">
+  <form class="contact" onsubmit="alert('Thanks for emailing us we will reply you ASAP')">
   <div class="col-md-6">
-    <input class="form-control" type="text" name="username" placeholder="Name" / >
-    <input class="form-control" type="email" name="email" placeholder="Email" / >
-    <input class="form-control" type="text" name="subject" placeholder="Subject"/ >
+    <input class="form-control" type="text" name="username" placeholder="Name" required / >
+    <input class="form-control" type="email" name="email" placeholder="Email" required / >
+    <input class="form-control" type="text" name="subject" placeholder="Subject"required / >
   </div>
   <div class="col-md-6">
-    <textarea class="form-control"  placeholder="message"></textarea>
+    <textarea class="form-control"  placeholder="message" required></textarea>
   </div>
+  <input class="contact-button" type="submit" value="Send message" / >
 </form>
 
 </div>
   <!-- START GRID -->
-  <button class="contact-button">Send message</button>
 </div>
 </div>
 <!--End contact us  -->
