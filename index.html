@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" >
     <link rel="shortcut icon" type="image/x-icon" href="laptop.png" />
-
   </head>
   <body>
     <!-- start navbar -->
@@ -30,16 +29,14 @@
     <div class="collapse navbar-collapse" id="axit-nav">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#vision">Our vision</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Fees </a></li>
+        <li><a href="#fees">Fees </a></li>
         <li><a href="#tabs">Courses</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact-us">Contact</a></li>
         <li><a href="#Achievers">Achievers</a></li>
         <li><a href="gallery.html" target="_blank">Gallery</a></li>
         <li><a href="#International">International Students</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
-
   </div>
 </nav>
 
@@ -50,14 +47,13 @@
           <div class="container">
         <div class="row centering-vh">
           <div class="col-md-6">
-            <h1>help<span>it </span></h1>
-
-            <p class="lead upper">ADDING VALU THROUGH DEVELOPING MOBILE MINDS </p>
-            <p> Learn more about our courses , events and worshops that we provide at HELP IT department by downloading our app</p>
+            <h1 class="text-center-xs">help<span>it </span></h1>
+            <p class="lead upper text-center-xs">ADDING VALU THROUGH DEVELOPING MOBILE MINDS </p>
+            <p class="text-center-xs"> Learn more about our courses , events and worshops that we provide at HELP IT department by downloading our app</p>
             <button type="button" name="button">Download Apk</button>
           </div>
           <div class="col-md-6"> <!-- Using grid system bootstrap which float it to the right when it's on medium size and put under when it's on small size (Mobile phone)-->
-          <form class="center-blcok" onsubmit="alert('Thanks for subscribing on our weekly TechNews')" method="post">
+          <form class="center-block" onsubmit="alert('Thanks for subscribing on our weekly TechNews')" method="post">
             <h2 class="h1 text-center">Try your <span> free  </span>tech news </h2>
             <input required class="form-control" type="text" name="username" value="" placeholder="Name" maxlength="16" autocomplete="off"/>
             <input required class="form-control" type="email" name="email" value="" placeholder="Email" autocomplete="off"/>
@@ -65,14 +61,12 @@
             <input class="btn btn-block" type="submit" name="submit" value="Get Started" />
           </form>
         </div>
-
           </div>
         </div>
     </div>
       </div>
 </div>
   <!-- End  Header -->
-
 <!-- Start Social Media -->
 <div class="social-media">
   <div class="container" >
@@ -96,7 +90,6 @@
 <!-- start tabs section -->
 <div id="tabs" class="tabs-section">
   <div class="container">
-
   <div class="row">
     <div class="col-md-2">
       <ul class="lis-unstyled tab-switch text-center"  >
@@ -185,7 +178,7 @@ Offer students a learning experience that enhances their career development, lif
 <!-- Start Achievers -->
 <div class="achievers text-center" id="Achievers">
     <div class="container">
-      <h2 class="h1">Achievers </h2>
+      <h2 class="h1 head-border head-border-center">Achievers </h2>
       <p></p>
       <div class="row">
         <div class="col-md-4">
@@ -210,9 +203,9 @@ Offer students a learning experience that enhances their career development, lif
     </div>
 </div>
 <!-- Start fees -->
-<div class="fees text-center">
+<div id="fees" class="fees text-center">
   <div class="container">
-    <h2 class="fees-head h1 head-border-center uppercase ">we have three diffrerent scholarship</h2>
+    <h2 class="fees-head h1 head-border uppercase ">we have three diffrerent scholarship</h2>
     <p class="fees-desc">we have three diffrerent scholarship</p>
     <div class="row">
       <div class="col-md-4">
@@ -272,11 +265,40 @@ Offer students a learning experience that enhances their career development, lif
     </div>
   </div>
 </div>
-
-
-
 <!-- End fees -->
-1
+<!--Start contact us  -->
+<div class="contact-us" id="contact-us">
+<div class="container">
+  <h2 class="contact-head h1 text-center head-border-center uppercase "> CONTACT US </h2>
+  <p class="contact-desc text-center">How can we help you today ? </p>
+  <!-- START GRID -->
+
+<div class="row">
+  <form class="contact">
+  <div class="col-md-6">
+    <input class="form-control" type="text" name="username" placeholder="Name" / >
+    <input class="form-control" type="email" name="email" placeholder="Email" / >
+    <input class="form-control" type="text" name="subject" placeholder="Subject"/ >
+  </div>
+  <div class="col-md-6">
+    <textarea class="form-control"  placeholder="message"></textarea>
+  </div>
+</form>
+
+</div>
+  <!-- START GRID -->
+  <button class="contact-button">Send message</button>
+</div>
+</div>
+<!--End contact us  -->
+<!-- start footer -->
+<div class="footer">
+  <div class="container text-center"> &copy <a href="https:www.help.edu.my" target="_blank" >HELP Univerity 2019 </a> </div>
+</div>
+
+<!-- End footer -->
+
+
 <!-- End Achievers -->
     <script src='js/jquery-1.12.4.min.js'> </script>
     <script src='js/bootstrap.min.js'> </script>
