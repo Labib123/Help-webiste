@@ -36,9 +36,6 @@ margin: 20px auto;}
 /*Start header */
 .header {
         background: url(../images/Header.jpg) no-repeat top center  ;
-        -webkit-background-size:cover ;
-        -moz-background-size:cover;
-        -o-background-size:cover ;
         background-size:cover ;
         height: 100vh;
         position: relative;}
@@ -152,9 +149,6 @@ color : #FFF ;  }
 {
   color: #ccc ;
   margin: 20px 15px  ;
-  -webkit-transition : all .3s ease-in-out ;
-  -moz-transition : all .3s ease-in-out ;
-  -o-transition : all .3s ease-in-out ;
   transition : all .3s ease-in-out ;
   cursor: pointer ;
 }
@@ -307,4 +301,4 @@ padding: 8px 20px ; border: 2px solid #FFF ; background:#ff8b38 ; color: #FFF ; 
   .options{
     margin-bottom: 30px ;
   }
-.apk{color:#FFF}
+}
