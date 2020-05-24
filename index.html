@@ -1,303 +1,551 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Home - HELP Univerity  </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - HELP Univerity</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" >
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" type="image/x-icon" href="laptop.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="app.js"></script>
+    <script src="sw.js"></script>
   </head>
   <body>
     <!-- start navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#axit-nav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">HELP UNIVERSITY </a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="axit-nav">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#vision">Our vision</a></li>
-        <li><a href="#fees">Fees </a></li>
-        <li><a href="#tabs">Courses</a></li>
-        <li><a href="#contact-us">Contact</a></li>
-        <li><a href="#Achievers">Achievers</a></li>
-        <li><a href="gallery.html" target="_blank">Gallery</a></li>
-        <li><a href="#International">International Students</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div>
-</nav>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#axit-nav"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">HELP UNIVERSITY </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="axit-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#vision">Our vision</a></li>
+            <li><a href="#fees">Fees </a></li>
+            <li><a href="#tabs">Courses</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+            <li><a href="#Achievers">Achievers</a></li>
+            <li><a href="gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="#International">International Students</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
 
-  <!-- End navbar -->
-  <!-- Start Header -->
-  <div class="header">
-      <div class="overlay" >
-          <div class="container">
-        <div class="row centering-vh">
-          <div class="col-md-6">
-            <h1 class="text-center-xs">help<span>it </span></h1>   <!--   -->
-            <p class="lead upper text-center-xs">ADDING VALUE THROUGH DEVELOPING MOBILE MINDS </p>
-            <p class="text-center-xs"> Learn more about our courses , events and worshops that we provide at HELP IT department by downloading our app</p>
-            <button  style="color:#FFF" type="button" name="button" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.musta.mustafa.schoolagenda';">Download Apk</button>
+    <!-- End navbar -->
+    <!-- Start Header -->
+    <div class="header">
+      <div class="overlay">
+        <div class="container">
+          <div class="row centering-vh">
+            <div class="col-md-6">
+              <h1 class="text-center-xs">help<span>it </span></h1>
+              <!--   -->
+              <p class="lead upper text-center-xs">
+                ADDING VALUE THROUGH DEVELOPING MOBILE MINDS
+              </p>
+              <p class="text-center-xs">
+                Learn more about our courses , events and worshops that we
+                provide at HELP IT department by downloading our app
+              </p>
+              <button
+                style="color: #fff;"
+                type="button"
+                name="button"
+                id="downlaod"
+              >
+                Download Apk
+              </button>
+            </div>
+            <div class="col-md-6">
+              <!-- Using grid system bootstrap which float it to the right when it's on medium size and put under when it's on small size (Mobile phone)-->
+              <form
+                class="center-block"
+                onsubmit="alert('Thanks for subscribing on our weekly TechNews')"
+                method="post"
+              >
+                <h2 class="h1 text-center">
+                  Try your <span> free </span>tech news
+                </h2>
+                <input
+                  required
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  value=""
+                  placeholder="Name"
+                  maxlength="16"
+                  autocomplete="off"
+                />
+                <input
+                  required
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  value=""
+                  placeholder="Email"
+                  autocomplete="off"
+                />
+                <input
+                  required
+                  class="form-control"
+                  type="tel"
+                  name="pass"
+                  value=""
+                  placeholder="Phone number"
+                  autocomplete="off"
+                />
+                <input
+                  class="btn btn-block"
+                  type="submit"
+                  name="submit"
+                  value="Get Started"
+                />
+              </form>
+            </div>
           </div>
-          <div class="col-md-6"> <!-- Using grid system bootstrap which float it to the right when it's on medium size and put under when it's on small size (Mobile phone)-->
-          <form class="center-block" onsubmit="alert('Thanks for subscribing on our weekly TechNews')" method="post">
-            <h2 class="h1 text-center">Try your <span> free  </span>tech news </h2>
-            <input required class="form-control" type="text" name="username" value="" placeholder="Name" maxlength="16" autocomplete="off"/>
-            <input required class="form-control" type="email" name="email" value="" placeholder="Email" autocomplete="off"/>
-            <input required class="form-control" type="tel" name="pass" value="" placeholder="Phone number" autocomplete="off"/>
-            <input class="btn btn-block" type="submit" name="submit" value="Get Started" />
+        </div>
+      </div>
+    </div>
+    <!-- End  Header -->
+    <!-- Start Social Media -->
+    <div class="social-media">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Social media</h4>
+            <p>
+              Stay connected with HELP! Choose your favourite social media
+              channel
+            </p>
+          </div>
+          <div class="col-md-8">
+            <a href="https://www.facebook.com/HELPUniversity" target="_blank">
+              <i class="fab fa-facebook-f fa-3x fa-fw"> </i>
+            </a>
+            <a
+              href="https://twitter.com/HELPUni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+            >
+              <i class="fab fa-twitter fa-3x fa-fw"></i>
+            </a>
+            <a
+              href="https://plus.google.com/108038921747962528951"
+              target="_blank"
+            >
+              <i class="fab fa-google-plus-g fa-3x fa-fw"></i>
+            </a>
+            <a href="https://www.instagram.com/help_uni/?hl=en" target="_blank">
+              <i class="fab fab fa-instagram fa-3x fa-fw"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/help-university-college"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in fa-3x fa-fw"></i>
+            </a>
+            <a href="https://rss.com/" target="_blank">
+              <i class="fas fa-rss fa-3x fa-fw"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Social Media -->
+    <!-- start tabs section -->
+    <div id="tabs" class="tabs-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <ul class="lis-unstyled tab-switch text-center">
+              <li class="selected" data-class="tab-one">Course1</li>
+              <li data-class="tab-two">Course2</li>
+              <li data-class="tab-three">Course3</li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <div class="tabs-content">
+              <div class="tab-one">
+                <h3>Diploma in Information Technology</h3>
+                <p class="lead">
+                  The Diploma in Information Technology encompasses a thorough
+                  grounding in the fundamental skills as well as providing a
+                  theoretical understanding which is vital for an IT graduate.
+                  Students will be exposed to JAVA programming, VB.net, HTML,
+                  J2ME, Java Scripting as well as networking and business
+                  communication. Lifelong learning skills are integrated into
+                  the Level One units with emphasis on critical thinking skills
+                  and personal excellence. They are also taught communication
+                  and personal skills to enable them to interact effectively in
+                  the demanding workforce.
+                </p>
+                <button
+                  class="btn btn-lg"
+                  onclick="window.location.href = 'https://applications.help.edu.my/applications/index.php';"
+                >
+                  Apply now
+                </button>
+              </div>
+              <div class="tab-two">
+                <h3>Bachelor of Information Technology (Hons)</h3>
+                <p class="lead">
+                  The Bachelor of Information Technology (Hons) offered by HELP
+                  University is a three year course and is designed to equip
+                  students with skills and attributes required to be effective
+                  and efficient information technology professionals. The
+                  Bachelor of Information Technology (Hons) course has a core of
+                  Information Technology (IT) subjects complemented with a
+                  selection from a wide range of subjects that includes the
+                  latest advances in IT skills, concepts and applications (eg
+                  object oriented analysis and design, multimedia, networking,
+                  data communications and internet publishing).
+                </p>
+                <button
+                  class="btn btn-lg"
+                  onclick="window.location.href = 'https://applications.help.edu.my/applications/index.php';"
+                >
+                  Apply now
+                </button>
+              </div>
+              <div class="tab-three">
+                <h3>
+                  Bachelor of Information Technology (Hons) Mobile Computing
+                </h3>
+                <p class="lead">
+                  The BIT (Hons) Mobile Computing offered by HELP University is
+                  a three year course that prepares students for a career in the
+                  mobile telecommunication industries. The programme will equip
+                  students with the capabilities and versatility of mobile
+                  technologies, and trends in mobile business and user
+                  applications.
+                </p>
+                <button
+                  class="btn btn-lg"
+                  onclick="window.location.href = 'https://applications.help.edu.my/applications/index.php';"
+                >
+                  Apply now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img
+              class="tab-one img-responsive center-blcok"
+              src="images/IT2.jpg"
+              alt="IT"
+            />
+            <img
+              class="tab-two img-responsive center-blcok"
+              src="images/IT3.jpg"
+              alt="IT"
+            />
+            <img
+              class="tab-three img-responsive center-blcok"
+              src="images/IT.jpg"
+              alt="IT"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End taps section -->
+
+    <!-- Sublist section -->
+    <div id="International" class="sublist">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="img-responsive center-block sub-image"
+              src="images/International.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="list-info">
+              <h3 class="head-border">International Students</h3>
+              <p>
+                Malaysia is known throughout the world for its intoxicating mix
+                of cultures which is an irresistible draw for people from around
+                the world. Its many ethnic groups is a shining example of
+                peaceful co-existence regardless of race or creed. Some of the
+                most beautiful natural environments in the world are also found
+                here: mountains, forests, islands and seas hosting unique
+                eco-systems which attract large numbers of tourists,
+                naturalists, environmentalists and researchers.
+              </p>
+              <div class="list-icon">
+                <i class="fas fa-caret-right"></i>
+                <h4><sup>STEP 1</sup>Choose Your Programme</h4>
+                <p>
+                  Browse our website to select your desired programme. Please
+                  take note of the entry requirements, programme details, intake
+                  dates, fees and other prerequisites before you submit your
+                  application.
+                </p>
+              </div>
+              <div class="list-icon">
+                <i class="fa fa-down"> </i>
+                <i class="fas fa-caret-right"></i>
+                <h4><sup>STEP 2</sup>Choose Your Application Method</h4>
+                <p>
+                  Online Application : For applicants applying online, please
+                  complete ALL THE SECTIONS of the online application form and
+                  submit your supporting documents (see ‘Supporting Documents’)
+                  <a
+                    href="https://applications.help.edu.my/applications/index.php"
+                    target="_blank"
+                    >Apply now
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Vision and mission -->
+    <div id="vision" class="vision">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="list-info">
+              <h3 class="head-border">Mission & Vision Statement</h3>
+              <p>
+                Be a college with a strong culture of quality and leadership
+                that focuses on sound academic standards, continuous
+                improvement, and the talent development of staff and students.
+                Offer students a learning experience that enhances their career
+                development, lifetime values, and personal fulfillment. Share
+                our success with the stakeholders and community we serve.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="img-responsive center-block vision-pic"
+              src="images/vision.jpg"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Achievers -->
+    <div class="achievers text-center" id="Achievers">
+      <div class="container">
+        <h2 class="h1 head-border head-border-center">Achievers</h2>
+        <p></p>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              class="img-responsive center-block"
+              src="images/ooi_her_wuen.jpg"
+              alt=""
+            />
+            <h3>Oui Her Wuen</h3>
+            <p>Bachelor of Information Technology (First Class Honours)</p>
+            <p>
+              AWARDS & ACHIEVEMENTS : Tan Sri Datuk Paduka Dr Hajjah Saleha
+              Outstanding Achievement Award and the President’s Award
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="img-responsive center-block"
+              src="images/fianto-1.jpg"
+              alt="image"
+            />
+            <h3>Frianto Moerdowo</h3>
+            <p>Bachelor of Information Technology (Hons)</p>
+            <p>
+              AWARDS & ACHIEVEMENTS : Selected to attend the Google Launchpad
+              Accelerator Program at Googleplex, Silicon Valley
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="img-responsive center-block achie"
+              src="images/Gusindra.jpg"
+              alt="Gusindra"
+            />
+            <h3>Gusindra Divanatha</h3>
+            <p>Bachelor of Information Technology (Hons)</p>
+            <p>
+              AWARDS & ACHIEVEMENTS : Selected to attend the Google Launchpad
+              Accelerator Program at Googleplex, Silicon Valley
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start fees -->
+    <div id="fees" class="fees text-center">
+      <div class="container">
+        <h2 class="fees-head h1 head-border-center uppercase">
+          We offer three different scholarships
+        </h2>
+        <p class="fees-desc">
+          Students will be entitled to only one of the bursaries (whichever is
+          higher).
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="fees-box box1">
+              <h3 class="basic plan-head">HELP- UEC Bursary</h3>
+              <div class="options">
+                <span class="price">30</span>
+                <span class="usd">%</span>
+                <span class="period">Annually</span>
+              </div>
+              <ul class="list-unstyled configuration">
+                <li>Local & International</li>
+                <li>30% of tuition fees for 1st Year</li>
+                <li>
+                  20% of tuition fees for 2nd and 3rd Year. Maintain CGPA 2.75
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fees-box">
+              <h3 class="basic plan-head">IT Industry Bursary</h3>
+              <div class="options">
+                <span class="price">50</span>
+                <span class="usd">%</span>
+                <span class="period">Annually</span>
+              </div>
+              <p class="most-pop">Our most popular scholarship</p>
+              <ul class="list-unstyled configuration">
+                <li>Local & International</li>
+                <li>
+                  The student MUST maintain > 80% attendance in lectures and
+                  tutorials for each subject
+                </li>
+                <li>
+                  The student MUST maintain at least CGPA 3.00 each semester
+                </li>
+                <li>
+                  The student MUST maintain minimum of 40 contribution hours
+                  (long semesters) & 20 contribution hours (short semesters)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- -->
+          <div class="col-md-4">
+            <div class="fees-box box1">
+              <h3 class="professional plan-head">STPM Bursary</h3>
+              <div class="options">
+                <span class="price">30</span>
+                <span class="usd">%</span>
+                <span class="period">Annually</span>
+              </div>
+              <ul class="list-unstyled configuration">
+                <li>Local & International</li>
+                <li>30% of tuition fees for 1st Year</li>
+                <li>
+                  20% of tuition fees for 2nd and 3rd Year. Maintain CGPA 2.75
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End fees -->
+    <!--Start contact us  -->
+    <div class="contact-us" id="contact-us">
+      <div class="container">
+        <h2 class="contact-head h1 text-center head-border-center uppercase">
+          CONTACT US
+        </h2>
+        <p class="contact-desc text-center">How can we help you today ?</p>
+        <!-- START GRID -->
+
+        <div class="row">
+          <form
+            class="contact"
+            onsubmit="alert('Thanks for emailing us we will reply you ASAP')"
+          >
+            <div class="col-md-6">
+              <input
+                class="form-control"
+                type="text"
+                name="username"
+                placeholder="Name"
+                required
+              />
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="form-control"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <textarea
+                class="form-control"
+                placeholder="message"
+                required
+              ></textarea>
+            </div>
+            <input class="contact-button" type="submit" value="Send message" />
           </form>
         </div>
-          </div>
-        </div>
-    </div>
-      </div>
-  <!-- End  Header -->
-<!-- Start Social Media -->
-<div class="social-media">
-  <div class="container" >
-  <div class="row">
-    <div class="col-md-4">
-      <h4> Social media </h4>
-      <p>Stay connected with HELP! Choose your favourite social media channel</p>
-    </div>
-    <div class="col-md-8">
-    <a href="https://www.facebook.com/HELPUniversity" target="_blank">   <i class="fab fa-facebook-f fa-3x fa-fw"> </i> </a>
-    <a href="https://twitter.com/HELPUni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" > <i class="fab fa-twitter fa-3x fa-fw"></i> </a>
-    <a href="https://plus.google.com/108038921747962528951" target="_blank" >  <i class="fab fa-google-plus-g fa-3x fa-fw"></i> </a>
-    <a href="https://www.instagram.com/help_uni/?hl=en" target="_blank" >  <i class="fab fab fa-instagram fa-3x fa-fw"></i> </a>
-    <a href="https://www.linkedin.com/company/help-university-college" target="_blank">  <i class="fab fa-linkedin-in fa-3x fa-fw"></i> </a>
-    <a href="https://rss.com/"  target="_blank" > <i class="fas fa-rss fa-3x fa-fw"></i> </a>
-    </div>
-  </div>
-</div>
-</div>
-<!-- End Social Media -->
-<!-- start tabs section -->
-<div id="tabs" class="tabs-section">
-  <div class="container">
-  <div class="row">
-    <div class="col-md-2">
-      <ul class="lis-unstyled tab-switch text-center"  >
-        <li class="selected" data-class="tab-one">Course1</li>
-        <li data-class="tab-two">Course2</li>
-        <li data-class="tab-three">Course3</li>
-        </ul>
-    </div>
-    <div class="col-md-7">
-      <div class="tabs-content" >
-      <div class="tab-one">
-        <h3>Diploma in Information Technology </h3>
-        <p class="lead" >The Diploma in Information Technology encompasses a thorough grounding in the fundamental skills as well as providing a theoretical understanding which is vital for an IT graduate. Students will be exposed to JAVA programming, VB.net, HTML, J2ME, Java Scripting as well as networking and business communication. Lifelong learning skills are integrated into the Level One units with emphasis on critical thinking skills and personal excellence. They are also taught communication and personal skills to enable them to interact effectively in the demanding workforce.</p>
-        <button  class="btn btn-lg" onclick="window.location.href = 'https://applications.help.edu.my/applications/index.php';" >Apply now</button>
-      </div>
-      <div class="tab-two">
-        <h3>Bachelor of Information Technology (Hons) </h3>
-        <p class="lead" >The Bachelor of Information Technology (Hons) offered by HELP University is a three year course and is designed to equip students with skills and attributes required to be effective and efficient information technology professionals.
-          The Bachelor of Information Technology (Hons) course has a core of Information Technology (IT) subjects complemented with a selection from a wide range of subjects that includes the latest advances in IT skills, concepts and applications (eg object oriented analysis and design, multimedia, networking, data communications and internet publishing).</p>
-          <button  class="btn btn-lg" onclick="window.location.href = 'https://applications.help.edu.my/applications/index.php';" >Apply now</button>
-    </div>
-      <div class="tab-three">
-        <h3>Bachelor of Information Technology (Hons) Mobile Computing </h3>
-        <p class="lead" >The BIT (Hons) Mobile Computing offered by HELP University is a three year course that prepares students for a career in the mobile telecommunication industries. The programme will equip students with the capabilities and versatility of mobile technologies, and trends in mobile business and user applications.</p>
-        <button  class="btn btn-lg" onclick="window.location.href = 'https://applications.help.edu.my/applications/index.php';" >Apply now</button>
+        <!-- START GRID -->
       </div>
     </div>
-  </div>
-    <div class="col-md-3">
-      <img class="tab-one img-responsive center-blcok" src="images/IT2.jpg" alt="IT">
-      <img class="tab-two img-responsive center-blcok" src="images/IT3.jpg" alt="IT">
-      <img class="tab-three img-responsive center-blcok" src="images/IT.jpg" alt="IT">
-    </div>
-  </div>
-</div>
-</div>
-<!-- End taps section -->
-
-
-<!-- Sublist section -->
-<div id ="International" class="sublist">
-    <div class="container">
-      <div  class="row">
-        <div class="col-md-6">
-          <img class="img-responsive center-block sub-image" src="images/International.jpg" alt="image">
-        </div>
-        <div class="col-md-6">
-          <div class="list-info" >
-            <h3 class="head-border">International Students</h3>
-            <p>Malaysia is known throughout the world for its intoxicating mix of cultures which is an irresistible draw for people from around the world. Its many ethnic groups is a shining example of peaceful co-existence regardless of race or creed. Some of the most beautiful natural environments in the world are also found here: mountains, forests, islands and seas hosting unique eco-systems which attract large numbers of tourists, naturalists, environmentalists and researchers.</p>
-            <div class="list-icon">
-              <i class="fas fa-caret-right"></i>
-              <h4><sup>STEP 1</sup>Choose Your Programme</h4>
-              <p>Browse our website to select your desired programme. Please take note of the entry requirements, programme details, intake dates, fees and other prerequisites before you submit your application.</p>
-            </div>
-            <div class="list-icon">
-              <i class="fa fa-down"> </i>
-              <i class="fas fa-caret-right "></i>
-              <h4><sup>STEP 2</sup>Choose Your Application Method</h4>
-              <p>Online Application : For applicants applying online, please complete ALL THE SECTIONS of the online application form and submit your supporting documents (see ‘Supporting Documents’) <a href="https://applications.help.edu.my/applications/index.php" target="_blank" >Apply now </a> </p>
-            </div>
-          </div>
-        </div>
+    <!--End contact us  -->
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container text-center">
+        &copy;
+        <a href="https://www.help.edu.my" target="_blank"
+          >HELP Univerity 2019
+        </a>
       </div>
     </div>
-</div>
-<!-- Start Vision and mission -->
-<div id ="vision" class="vision">
-    <div class="container">
-      <div  class="row">
-        <div class="col-md-6">
-          <div class="list-info" >
-            <h3 class="head-border">Mission & Vision Statement</h3>
-            <p> Be a college with a strong culture of quality and leadership that focuses on sound academic standards, continuous improvement, and the talent development of staff and students.
 
-Offer students a learning experience that enhances their career development, lifetime values, and personal fulfillment. Share our success with the stakeholders and community we serve.</p>
+    <!-- End footer -->
 
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img class="img-responsive center-block vision-pic" src="images/vision.jpg" alt="image">
-        </div>
-      </div>
-    </div>
-</div>
-<!-- Start Achievers -->
-<div class="achievers text-center" id="Achievers">
-    <div class="container">
-      <h2 class="h1 head-border head-border-center">Achievers </h2>
-      <p></p>
-      <div class="row">
-        <div class="col-md-4">
-          <img class="img-responsive center-block" src="images/ooi_her_wuen.jpg" alt="">
-          <h3>Oui Her Wuen</h3>
-          <p>Bachelor of Information Technology (First Class Honours) </p>
-          <p>AWARDS & ACHIEVEMENTS : Tan Sri Datuk Paduka Dr Hajjah Saleha Outstanding Achievement Award and the President’s Award</p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-responsive center-block" src="images/fianto-1.jpg" alt="image">
-          <h3>Frianto Moerdowo</h3>
-          <p>Bachelor of Information Technology (Hons) </p>
-          <p>AWARDS & ACHIEVEMENTS : Selected to attend the Google Launchpad Accelerator Program at Googleplex, Silicon Valley</p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-responsive center-block achie" src="images/Gusindra.jpg" alt="Gusindra">
-          <h3>Gusindra Divanatha </h3>
-          <p>Bachelor of Information Technology (Hons) </p>
-          <p>AWARDS & ACHIEVEMENTS : Selected to attend the Google Launchpad Accelerator Program at Googleplex, Silicon Valley</p>
-        </div>
-      </div>
-    </div>
-</div>
-<!-- Start fees -->
-<div id="fees" class="fees text-center">
-  <div class="container">
-    <h2 class="fees-head h1 head-border-center uppercase ">We offer three different scholarships</h2>
-    <p class="fees-desc">Students will be entitled to only one of the bursaries (whichever is higher).</p>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="fees-box box1">
-          <h3 class="basic plan-head">HELP- UEC Bursary</h3>
-          <div class="options">
-          <span class="price">30</span>
-          <span class="usd">%</span>
-          <span class="period">Annually</span>
-        </div>
-        <ul class="list-unstyled configuration">
-          <li>Local & International</li>
-          <li>30% of tuition fees for 1st Year</li>
-          <li>20% of tuition fees for 2nd and 3rd Year. Maintain CGPA 2.75</li>
-        </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="fees-box">
-          <h3 class="basic plan-head">IT Industry Bursary </h3>
-          <div class="options">
-          <span class="price">50</span>
-          <span class="usd">%</span>
-          <span class="period">Annually</span>
-        </div>
-        <p class="most-pop">Our most popular scholarship</p>
-        <ul class="list-unstyled configuration">
-          <li>Local & International</li>
-          <li>The student MUST maintain > 80% attendance in lectures and tutorials for each subject</li>
-          <li> The student MUST maintain at least CGPA 3.00 each semester</li>
-          <li>The student MUST maintain minimum of 40 contribution hours (long semesters) & 20 contribution hours (short semesters) </li>
-        </ul>
-        </div>
-      </div>
-      <!-- -->
-      <div class="col-md-4">
-        <div class="fees-box box1">
-          <h3 class="professional plan-head">STPM Bursary</h3>
-          <div class="options">
-          <span class="price">30</span>
-          <span class="usd">%</span>
-          <span class="period">Annually</span>
-        </div>
-        <ul class="list-unstyled configuration">
-          <li>Local & International</li>
-          <li>30% of tuition fees for 1st Year</li>
-          <li>20% of tuition fees for 2nd and 3rd Year. Maintain CGPA 2.75</li>
-        </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End fees -->
-<!--Start contact us  -->
-<div class="contact-us" id="contact-us">
-<div class="container">
-  <h2 class="contact-head h1 text-center head-border-center uppercase "> CONTACT US </h2>
-  <p class="contact-desc text-center">How can we help you today ? </p>
-  <!-- START GRID -->
-
-<div class="row">
-  <form class="contact" onsubmit="alert('Thanks for emailing us we will reply you ASAP')">
-  <div class="col-md-6">
-    <input class="form-control" type="text" name="username" placeholder="Name" required />
-    <input class="form-control" type="email" name="email" placeholder="Email" required />
-    <input class="form-control" type="text" name="subject" placeholder="Subject" required />
-  </div>
-  <div class="col-md-6">
-    <textarea class="form-control"  placeholder="message" required></textarea>
-  </div>
-  <input class="contact-button" type="submit" value="Send message" />
-</form>
-
-</div>
-  <!-- START GRID -->
-</div>
-</div>
-<!--End contact us  -->
-<!-- start footer -->
-<div class="footer">
-  <div class="container text-center"> &copy; <a href="https://www.help.edu.my" target="_blank" >HELP Univerity 2019 </a> </div>
-</div>
-
-<!-- End footer -->
-
-
-<!-- End Achievers -->
-    <script src='js/jquery-1.12.4.min.js'> </script>
-    <script src='js/bootstrap.min.js'> </script>
-    <script src='js/main.js'> </script>
-
-
-
+    <!-- End Achievers -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

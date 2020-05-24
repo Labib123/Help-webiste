@@ -1,0 +1,16 @@
+{
+  "name": "HELP University",
+  "short_name": "University",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F4F4F4",
+  "theme_color": "#F4F4F4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "laptop.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
